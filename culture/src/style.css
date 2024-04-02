@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*------------product page----------*/
+.product-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#products::after{
+    content: "";
+    background-color: white;
+    width: 10px;
+    height: 2px;
+}
+
+.product-list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+.product-card{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 10px;
+    border: 1px solid #DDDDDD;
+}
+#img{
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 50%;
+    width: 100%;
+}
