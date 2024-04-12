@@ -1,12 +1,12 @@
 import React from 'react'
 // import Navbar from './Navbar'
 
-const Products = () => {
+const Login = () => {
   return (
     <div>
-      <li>Products</li>
+      <li>Login</li>
     </div>
   )
 }
 
-export default Products;
+export default Login;

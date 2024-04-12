@@ -1,20 +1,26 @@
 import React from 'react'
-import Home from './Home';
-import Products from './Products';
-import About from './AboutUs';
-import AddCart from './AddCart';
-import Login from './Login';
-
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
+    <>
     <div className='header'>
-        <Home />
-        <Products />
-        <About />
-        <AddCart />
-        <Login />    
+      <div className='logo'> logo </div>
+
+      <div className="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button>Search</button>
+        </div>
+
+      <div className='links'>
+        <Link to="/" className='home'>Home</Link>
+        <Link to="/products" className='products'>Products</Link>
+        <Link to="/about" className='about'>About Us</Link>
+        <Link to="/cart" className='cart'>Cart</Link>
+        <Link to="/login" className='login'>Login</Link>
+      </div>
     </div>
+    </>
   )
 }
 
